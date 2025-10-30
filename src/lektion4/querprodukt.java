@@ -23,7 +23,7 @@ public class querprodukt {
 
             for (int i = zahl; i > 0;i=i/10) {
                 int letzteStelle = i%10;
-                querprodukt = querprodukt * letzteStelle;
+                querprodukt *= letzteStelle;
             }
             System.out.println("Das Querprodukt der Zahl "+zahl+" betraegt "+querprodukt);
         }
