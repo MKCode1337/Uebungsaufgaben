@@ -8,6 +8,7 @@ public class einmaleins {
                 int ergebnis = n * i;
                 System.out.println(n + " x " + i + " = " + ergebnis);
             }
+            System.out.println("");
         }
     }
 }
