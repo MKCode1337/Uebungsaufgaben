@@ -11,6 +11,7 @@ public class primzahl {
         for (int i = 2; i < zahl; i++) {
             if (zahl % i == 0) {
                 istPrimzahl = zahl + " ist keine Primzahl!";
+                break;
             }
         }
         System.out.println(istPrimzahl);
