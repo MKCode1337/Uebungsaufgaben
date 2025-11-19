@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class potenzRekursiv {
     public static double potenz(double x,int n){
         if(n==0) return x=1;
-        return x*potenz(x,n-1);
+        else if (n>0)
+            return x*potenz(x,n-1);
+
+        else
+            return 1/potenz(x,(-n));
     }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Geben Sie eine Basis ein: ");
