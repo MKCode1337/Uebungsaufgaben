@@ -28,7 +28,7 @@ public class runden {
 
     public static void main(String[] args) {
         double zahl = 17.5765;
-        int stellen = 3;
+        int stellen = 2;
         System.out.println(aufStellenRunden(zahl, stellen));
     }
 }

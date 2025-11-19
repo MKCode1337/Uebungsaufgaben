@@ -3,7 +3,7 @@ package lektion6;
 import java.util.Scanner;
 
 public class potenzRekursiv {
-    public static int potenz(int x,int n){
+    public static double potenz(double x,int n){
         if(n==0) return x=1;
         return x*potenz(x,n-1);
     }

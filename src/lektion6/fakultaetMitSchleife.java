@@ -3,8 +3,8 @@ package lektion6;
 import java.util.Scanner;
 
 public class fakultaetMitSchleife {
-    public static int fakultaet(int x){
-        int ergebnis = 1;
+    public static double fakultaet(int x){
+        double ergebnis = 1;
         int faktor = x;
         for (int i = 1; i <= x; i++) {
             ergebnis *= faktor;
@@ -16,7 +16,7 @@ public class fakultaetMitSchleife {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Zahl für Fakultät einlesen: ");
         int zahl = scanner.nextInt();
-        int ergebnis = fakultaet(zahl);
+        double ergebnis = fakultaet(zahl);
         System.out.println(zahl+" Fakultät ergibt: "+ergebnis);
     }
 }
