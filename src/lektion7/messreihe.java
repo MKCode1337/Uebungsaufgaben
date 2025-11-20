@@ -2,7 +2,18 @@ package lektion7;
 
 import java.util.Scanner;
 
+
+
 public class messreihe {
+    public static double standardabweichung(double[] werte, double mittelWert){
+        double standardAbweichung = 0;
+        for (int i=0;i<werte.length;i++){
+            standardAbweichung += Math.pow((werte[i]-mittelWert),2);
+        }
+        int n = werte.length;
+        standardAbweichung = Math.sqrt((1.0/n)*standardAbweichung);
+        return standardAbweichung;
+    }
     public static double minimum(double a, double b) {
         if (a < b)
             return a;
@@ -57,5 +68,6 @@ public class messreihe {
         }
         System.out.println("Größter Wert: "+maximum);
         System.out.println("Arithemtisches Mittel: "+arithmetischesMittel(werte));
+        System.out.println("Standardabweichung: "+standardabweichung(werte,arithmetischesMittel(werte)));
     }
 }
