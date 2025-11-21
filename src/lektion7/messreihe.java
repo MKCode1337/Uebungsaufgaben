@@ -2,8 +2,6 @@ package lektion7;
 
 import java.util.Scanner;
 
-
-
 public class messreihe {
     public static double standardabweichung(double[] werte, double mittelWert){
         double standardAbweichung = 0;

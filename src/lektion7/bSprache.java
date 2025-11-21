@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class bSprache {
     public static boolean istVokal(char a) {
-        if (a == 97 || a == 101 || a == 105 || a == 111 || a == 117) {
+        if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
             return true;
         }
-        else if (a == 65 || a == 69 || a == 73 || a == 79 || a == 85) {
+        else if (a == 'A' || a == 'E' || a == 'I' || a == 'O' || a == 'U') {
             return true;
         }
         else return false;
