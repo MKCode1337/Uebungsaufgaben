@@ -8,12 +8,13 @@ public class galgenmaennchen {
         String[] wort = {"PROGRAMMIERSPRACHE", "TEST"};
         int zufallsIndex = (int) (Math.random()* wort.length);
         char[] rateWort = wort[zufallsIndex].toCharArray();
-        System.out.println(Arrays.toString(rateWort));
+        //System.out.println(Arrays.toString(rateWort));
         char[] eingabeN = new char[15];
         char[] loesung = new char[rateWort.length];
         int versucheCounter=0;
         for (int i = 0; i < 15; i++) {
             // Wort anzeigen
+            System.out.print(i+1+". Versuch: ");
             for (int n = 0; n < rateWort.length; n++) {
                 char ausgabe = '_';
                 for (int j = 0; j < eingabeN.length; j++) {
