@@ -47,19 +47,4 @@ public class galgenmaennchen {
         String eingabe = input.nextLine();
         return eingabe.toUpperCase().charAt(0);
     }
-
-//    public static void wortAnzeigen(char[] rateWort, char[] eingabeN) {
-//        for (int i = 0; i < rateWort.length; i++) {
-//            char ausgabe = '_';
-//            for (int j = 0; j < eingabeN.length; j++) {
-//                if (rateWort[i] == eingabeN[j]) {
-//                    ausgabe = rateWort[i];
-//                    break;
-//                }
-//            }
-//            System.out.print(ausgabe+" ");
-//        }
-//    }
-
-
 }
