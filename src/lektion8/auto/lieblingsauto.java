@@ -2,41 +2,22 @@ package lektion8.auto;
 
 public class lieblingsauto {
         public static  void main(String args[]) {
-        Auto mustang = new Auto();
-        mustang.Marke = "Ford";
-        mustang.Modell = "Mustang";
-        mustang.Farbe = "Rot";
-        mustang.Hubraum = 12000;
-        mustang.ps =  300;
-        mustang.Getriebe= "Automatik";
+        Auto mustang = new Auto("Ford", "Mustang", "Rot", 12000, 300, "Automatik");
 
-        Auto jimny = new Auto();
-        jimny.Marke = "Suzuki";
-        jimny.Modell = "Jimny";
-        jimny.Farbe = "Grün";
-        jimny.Hubraum = 1300;
-        jimny.ps =  86;
-        jimny.Getriebe= "Schaltgetriebe";
+        Auto jimny = new Auto("Suzuki", "Jimny", "Grün", 1300, 86, "Schaltgetriebe");
 
-        Auto astra = new Auto();
-        astra.Marke = "Opel";
-        astra.Modell = "Astra";
-        astra.Farbe = "Weiß";
-        astra.Hubraum = 1600;
-        astra.ps =  125;
-        astra.Getriebe= "Schaltgetriebe";
+        Auto astra = new Auto("Opel", "Astra", "Weiß", 1600, 125, "Schaltgetriebe");
 
-        int groessterHubraum = Math.max(mustang.Hubraum, Math.max(jimny.Hubraum, astra.Hubraum));
+        int groessterhubraum = Math.max(mustang.hubraum, Math.max(jimny.hubraum, astra.hubraum));
 
-        if (mustang.Hubraum == groessterHubraum) {
+        if (mustang.hubraum == groessterhubraum) {
             System.out.println(mustang);
-            }
-        else if(astra.Hubraum == groessterHubraum) {
+        }
+        else if(astra.hubraum == groessterhubraum) {
             System.out.println(astra);
             }
-        else if (jimny.Hubraum == groessterHubraum) {
+        else if (jimny.hubraum == groessterhubraum) {
             System.out.println(jimny);
             }
-
         }
 }

@@ -1,14 +1,28 @@
 package lektion8.auto;
 
 public class Auto {
-    String Marke;
-    String Modell;
-    String Farbe;
-    int Hubraum;
+    String marke;
+    String modell;
+    String farbe;
+    int hubraum;
     int ps;
-    String Getriebe;
+    String getriebe;
 
     public String toString() {
-        return "Marke: "+Marke+"\n"+"Modell: "+Modell+"\n"+"Farbe: "+Farbe+"\n"+"Hubraum in l: "+Hubraum+"\n"+"PS: "+ps+"\n"+"Getriebe: "+Getriebe;
+        return "marke: "+marke+"\n"+"modell: "+modell+"\n"+"farbe: "+farbe+"\n"+"hubraum in l: "+hubraum+"\n"+"PS: "+ps+"\n"+"getriebe: "+getriebe;
+    }
+
+    public Auto(String marke, String modell, String farbe, int hubraum, int ps, String getriebe) {
+        this.marke = marke;
+        this.modell = modell;
+        this.farbe = farbe;
+        if (hubraum > 0) this.hubraum = hubraum;
+        else this.hubraum = 1600;
+        this.ps = ps;
+        this.getriebe = getriebe;
+    }
+
+    public void sethubraum(int hubraum) {
+        if (hubraum > 0) this.hubraum = hubraum;
     }
 }

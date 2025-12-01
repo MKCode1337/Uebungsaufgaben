@@ -7,18 +7,18 @@ public class pizzaRechner {
 
         System.out.println("Geben Sie den Durchmesser der ersten Pizza in cm ein:");
         float durchmesserPizza1 = scanner.nextFloat();
-        float flaechePizza1 = PI*(durchmesserPizza1/2);
+        float flaechePizza1 = PI*(durchmesserPizza1/2)*(durchmesserPizza1/2);
         System.out.println("Geben Sie den Preis der ersten Pizza in Euro ein:");
         float preisPizza1 = scanner.nextFloat();
 
         System.out.println("Geben Sie den Durchmesser der zweiten Pizza in cm ein:");
         float durchmesserPizza2 = scanner.nextFloat();
-        float flachePizza2 = PI*(durchmesserPizza2/2);
+        float flaechePizza2 = PI*(durchmesserPizza2/2)*(durchmesserPizza2/2);
         System.out.println("Geben Sie den Preis der zweiten Pizza in Euro ein:");
         float preisPizza2 = scanner.nextFloat();
 
         float pizzaProEuro1 = flaechePizza1/preisPizza1;
-        float pizzaProEuro2 = flachePizza2/preisPizza2;
+        float pizzaProEuro2 = flaechePizza2/preisPizza2;
 
         // Pizzapreise pro cm² ausgeben
         //System.out.println("Pizza pro Euro 1: " + pizzaProEuro1);
