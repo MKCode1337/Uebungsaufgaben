@@ -1,12 +1,12 @@
 package lektion8.auto;
 
 public class Auto {
-    String marke;
-    String modell;
-    String farbe;
-    int hubraum;
-    int ps;
-    String getriebe;
+    private String marke;
+    private String modell;
+    private String farbe;
+    public int hubraum;
+    private int ps;
+    private String getriebe;
 
     public String toString() {
         return "marke: "+marke+"\n"+"modell: "+modell+"\n"+"farbe: "+farbe+"\n"+"hubraum in l: "+hubraum+"\n"+"PS: "+ps+"\n"+"getriebe: "+getriebe;
