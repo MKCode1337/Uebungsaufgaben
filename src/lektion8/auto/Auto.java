@@ -7,6 +7,7 @@ public class Auto {
     public int hubraum;
     private int ps;
     private String getriebe;
+    public static int autoZaehler;
 
     public String toString() {
         return "marke: "+marke+"\n"+"modell: "+modell+"\n"+"farbe: "+farbe+"\n"+"hubraum in l: "+hubraum+"\n"+"PS: "+ps+"\n"+"getriebe: "+getriebe;
@@ -20,6 +21,8 @@ public class Auto {
         else this.hubraum = 1600;
         this.ps = ps;
         this.getriebe = getriebe;
+        autoZaehler++;
+        System.out.println("Produktionszähler: "+autoZaehler);
     }
 
     public void sethubraum(int hubraum) {
